@@ -1,0 +1,131 @@
+form {
+    border: 1px solid rgba(173, 173, 173, 0.452);
+    width: 300px;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2),
+                0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    background: #fff;
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+}
+
+.header {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid rgba(200, 200, 200, 0.322);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(200, 200, 200, 0.514);
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+i {
+    background-color: rgb(60, 104, 224);
+    color: white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    accent-color: rgb(60, 104, 224);
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: rgb(60, 104, 224);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+     font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(40, 80, 200);
+}
+
+
+.content {
+    display: block;
+    font-size: 13px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.content a {
+    color: rgb(60, 104, 224);
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: underline;
+}
+form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25),
+                0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*----------------- popUp modal -----------------*/
+.model{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+}
+.modelContent{
+    width: 400px;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.close{
+    float: right;
+    cursor: pointer;
+    color: #aaa;
+    font-size: 24px;
+    font-weight: bold;
+}
+.close:hover{
+    color: red;
+}
